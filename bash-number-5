@@ -1,0 +1,44 @@
+#!/bin/bash
+
+value1=5
+
+if [ $value1 -gt 4 ]
+then 
+    echo "The value is greater than 4"
+else 
+    echo "The value is less than 4"
+fi 
+
+# -eq равно
+# -ge больше или равно
+# -gt больше
+# -le меньше или равно
+# -lt меньше 
+# -ne не равно
+
+user="timofey"
+
+if [ "$user" = "$USER" ]
+then 
+    echo "The user $user is the current logged in user"
+fi
+
+# str1=str2
+# str1!=str2
+# str1<str2
+# str1>str2
+# -n str1 если длина больше нуля, истина
+# -z str1 если длина равна нулю, истина
+
+# ">" is used with "\"
+
+val1="text"
+val2="another text"
+
+if [ "$val1" \> "$val2" ]
+then
+    echo "$val1 is greater than $val2"
+else
+    echo "$val1 is less than $val2"
+fi
+

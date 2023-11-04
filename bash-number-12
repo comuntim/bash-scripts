@@ -1,0 +1,12 @@
+#!/bin/bash
+IFS=$'\n'
+for entry in $(cat ./file12.txt)
+do
+echo "Values in $entry –
+"
+IFS=:
+for value in $entry
+do
+echo " $value"
+done
+done

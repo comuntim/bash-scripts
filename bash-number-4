@@ -1,0 +1,4 @@
+#!/bin/bash
+
+var1=$(( 5 + 5))
+echo $var1

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# now i wanna show home user (it's an environment variable)
+
+echo "Home for the current user is: $HOME"
+
+# now i tell about my brother (user variable)
+
+grade=7
+
+name="Ruslan"
+
+echo "$name is my brother, he is in grade $grade"
+
+

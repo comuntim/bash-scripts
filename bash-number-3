@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#using command as variable ("`" or $())
+
+mycurrentdir=`pwd`
+cd ..
+mycurrentdir2=$(pwd)
+
+echo "my current dir is $mycurrentdir, now i'm moving and my dir become $mycurrentdir2"
+
+

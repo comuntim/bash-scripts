@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# my first commited script (before i did it too)
+echo "The current directory is:"
+pwd
+echo "The user logged in is:"
+whoami

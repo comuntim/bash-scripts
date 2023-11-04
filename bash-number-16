@@ -1,0 +1,23 @@
+#!/bin/bash
+if [ -n "$1" ]
+then
+echo Hello $1.
+else
+echo "No parameters found. "
+fi
+
+echo $# #gotting amount of parametrs 
+echo The last parameter was ${!#} # print last parametr 
+
+echo "Using the \$* method: $*"
+echo "-----------
+"
+echo "Using the \$@ method: $@"
+
+for var in $*
+do
+echo $var 
+done
+
+
+# This script checks availability of parametr 

@@ -1,0 +1,3 @@
+file:exit:go
+file2:entery:went
+file3:stop:willgo

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for var in first seconf third fourth fifth
+
+do
+
+echo The "$var" item
+
+done
+

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "this is an error" >&2
+echo "this is normal output"
+
+# если мы запустим этот скрипт выведится обе строки, но если 
+# мы захотим, что сообщение об ошибках выводилось в файл, а 
+# удачное заверешение программы в консоль, то мы можем запустить 
+# скрип указав, что ошибки выводятся в файл ./script 2> myfile
+
+exec 2>myerror
+echo "This is the start of the script"
+echo "now redirecting all output to another location"
+exec 1>myfile
+echo "This should go to the myfile file"
+echo "and this should go to the myerror file" >&2
+
+# удобный вывод нескольких строк

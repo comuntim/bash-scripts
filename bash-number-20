@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo -n "Enter your name: "
+
+read name 
+
+echo "Hello $name, welcome to my programm"
+
+read -p  "Enter your full name: " last first 
+
+echo "your data for $last, $first"
+
+read -p "enter your name: "
+
+#there are not variable for name -> $REPLY
+
+echo "hello $REPLY, welcome to my prog"
+
+# можно добавить время ожидания, в течении которого пользователь должен ввести что-то
+
+if read -t 5 -p "enter your name: " name
+then 
+echo "hello $name, welcome to my script"
+else 
+echo "sorry, you are too slow! "
+fi
